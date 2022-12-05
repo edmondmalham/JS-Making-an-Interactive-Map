@@ -12,23 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-    <style>
-    #map { 
-        height: 400px;
-        background-color: #ccc;
-    }
-    #map::before{
-        content: 'LOADING';
-        font-size: 3em;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        margin-top: 3em;
-    }
-    .leaflet-popup-content-wrapper {
-        width: 100%;
-    }
-  </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <form>
@@ -40,6 +24,18 @@
         </select>
         <button id="submit">Submit</button>
     </form>
-    <div id="map"></div>
+    <div id="map">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 </body>
 </html>
